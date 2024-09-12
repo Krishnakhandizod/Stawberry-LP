@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+#nav{
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-right a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+#nav-right a:hover{
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    
+}
+
+#nav-right i{
+    color: royalblue;
+}
+#textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 80px;
+    font-weight: 800;
+    color: #ff9fba;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: .6;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+#left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    /* background-color: thistle; */
+}
+#right{
+    /* display: flex; */
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+}
+#right-top{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: green;
+}
+#right-bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#rtopright{
+    width: 55%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    background-image: url(https://media.istockphoto.com/id/845189892/photo/strawberry.jpg?s=612x612&w=0&k=20&c=qiulKoannD7fSvwpavKCAD_oSzRIj53XW831AbkAFl4=);
+    background-position: center;
+    background-size:cover;
+}
+#rtopleft{
+    width: 45%;
+    height: 100%;
+    /* background-color: brown; */
+    background-image: url(https://media.istockphoto.com/id/1397295681/photo/cute-pink-strawberry.jpg?s=612x612&w=0&k=20&c=zJO0Moy6CdQwatHM8uXtkQvp8gdydgn4tuS4TmKtyc0=);
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width:500px){
+    #container{
+        flex-direction: column;
+    }
+    #container #left{
+        width: 100%;}
+        
+        #container #right{
+            width: 100%;
+        }
+    }
